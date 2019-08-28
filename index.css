@@ -1,0 +1,259 @@
+/* 公共样式 start */
+.w {
+    max-width: 960px;
+    min-width: 340px;
+    margin: 0 auto;
+}
+
+/*点击高亮我们需要清除清除  设置为transparent 完成透明*/
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+
+/*在移动端浏览器默认的外观在iOS上加上这个属性才能给按钮和输入框自定义样式*/
+
+input {
+    -webkit-appearance: none;
+}
+
+/*禁用长按页面时的弹出菜单*/
+
+img, a {
+    -webkit-touch-callout: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    background-color: #ebebeb;
+}
+
+/* 清除浮动 */
+
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+li {
+    list-style: none;
+}
+/* 公共样式 end  */
+
+/* header start */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+header li {
+    float: left;
+    position: relative;
+    width: 33.33%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+}
+
+header li:first-child::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(.8);
+    background-color: #44b181;
+}
+
+header .border {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 20px;
+    background-color: #e1e1e1;
+}
+
+header li img {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+/* header end */
+
+/* article 主体内容区域 start */
+.slider {
+    width: 100%;
+    height: 200px;
+    background: url(./images/slider.png) no-repeat -2px 33px;
+    background-size: cover;
+}
+
+.question {
+    width: 100%;
+}
+
+.question>ul>li {
+    width: 100%;
+    height: 160px;
+    margin-top: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.question li .top {
+    width: 80%;
+    margin: 8px 0 0 8px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.question li .middle {
+    width: 80%;
+    height: 35px;
+    margin-left: 8px;
+    line-height: 35px;
+    color: #999;
+}
+
+.question li .middle span {
+    position: relative;
+    margin-right: 15px;
+}
+
+.question li .middle span:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 80%;
+    background-color: #666;
+}
+
+.question li .bottom {
+    width: 100%;
+    height: 60px;
+}
+
+.question li .bottom ul {
+    width: 100%;
+    height: 100%;
+}
+
+.question li .bottom li {
+    position: relative;
+    float: left;
+    height: 100%;
+}
+
+.question li .bottom li:nth-child(1) {
+    width: 15%;
+    height: 100%;
+}
+
+.question li .bottom li:nth-child(1) img {
+    width: 55px;
+    margin: 5px 0 0 8px;
+}
+
+.question li .bottom li:nth-child(2) {
+    width: 55%;
+    height: 100%;
+}
+
+.question li .bottom li:nth-child(2) img {
+    position: absolute;
+    left: 18px;
+    bottom: 0;
+    width: 80%;
+    height: 65%;
+    margin-top: 15px;
+}
+
+.question li .bottom li:nth-child(3) {
+    width: 30%;
+    height: 100%;
+}
+
+.question li .bottom li:nth-child(3) div {
+    position: absolute;
+    right: 8px;
+    bottom: 0;
+}
+
+.question li .bottom li:nth-child(3) div img {
+    width: 18px;
+}
+
+.question li .bottom li:nth-child(3) div span {
+    font-size: 17px;
+    color: #999;
+}
+/* article 主体内容区域 end */
+
+/* space start */
+.space {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 70px;
+}
+/* space end */
+
+/* footer start */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer li {
+    float: left;
+    position: relative;
+    width: 25%;
+    height: 65px;
+    background-color: #f5f7f9;
+    z-index: 2;
+}
+
+footer li img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 75%;
+}
+/* footer end */
